@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ratings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Station</th>
+      <th>Used</th>
+      <th>Sketchy</th>
+      <th>Dirty</th>
+      <th>Smelly</th>
+      <th>Schleppy</th>
+      <th>Review</th>
+      <th>Belongs to</th>
+      <th>Belongs to</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ratings.each do |rating| %>
+      <tr>
+        <td><%= rating.station_id %></td>
+        <td><%= rating.used_id %></td>
+        <td><%= rating.sketchy %></td>
+        <td><%= rating.dirty %></td>
+        <td><%= rating.smelly %></td>
+        <td><%= rating.schleppy %></td>
+        <td><%= rating.review %></td>
+        <td><%= rating.belongs_to %></td>
+        <td><%= rating.belongs_to %></td>
+        <td><%= link_to 'Show', rating %></td>
+        <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
+        <td><%= link_to 'Destroy', rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rating', new_rating_path %>

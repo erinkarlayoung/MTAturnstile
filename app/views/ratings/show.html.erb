@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Station:</strong>
+  <%= @rating.station_id %>
+</p>
+
+<p>
+  <strong>Used:</strong>
+  <%= @rating.used_id %>
+</p>
+
+<p>
+  <strong>Sketchy:</strong>
+  <%= @rating.sketchy %>
+</p>
+
+<p>
+  <strong>Dirty:</strong>
+  <%= @rating.dirty %>
+</p>
+
+<p>
+  <strong>Smelly:</strong>
+  <%= @rating.smelly %>
+</p>
+
+<p>
+  <strong>Schleppy:</strong>
+  <%= @rating.schleppy %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @rating.review %>
+</p>
+
+<p>
+  <strong>Belongs to:</strong>
+  <%= @rating.belongs_to %>
+</p>
+
+<p>
+  <strong>Belongs to:</strong>
+  <%= @rating.belongs_to %>
+</p>
+
+<%= link_to 'Edit', edit_rating_path(@rating) %> |
+<%= link_to 'Back', ratings_path %>
