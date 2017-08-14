@@ -1,3 +1,102 @@
 // Place all the styles related to the Stations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#newstation {
+	background-color: rgba(0,0,0,.6);
+	color: #fmfmfm;
+	font-family: "Walter Turncoat";
+	.field, #image, .actions {
+		margin: 20px;
+	}
+	.right {
+		text-align: right;
+	}
+	#backlink {
+		color: rgba(4,4,4,.8);
+		background-color: rgba(200,200,200,1);
+		text-decoration-color: none;
+		border: 1px solid ;
+		padding: 5px;
+	}
+}
+.showstation {
+	margin: 50px;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(100,100,100,.2);
+	text-align: center;
+	padding: 20px;
+	font-family: 'Walter Turncoat';
+	.image {
+		max-width: 500px;
+		display: block;
+	}
+	h2 {
+		width: 100%;
+	}
+	.row {
+		margin-top: 20px;
+		p {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+	.desc {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	.links {
+		text-align: center;
+		a {
+			text-align: center;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+.station_summary {
+	position:absolute;
+	width: 300px;
+	height: 200px;
+	color: #fff;
+	font-family: "Walter Turncoat";
+}
+
+.station_info {
+	position: fixed;
+	width: 70%;
+	font-family: "Walter Turncoat";
+	color: #fff;
+	top: 25%;
+	left: 15%;
+	z-index: 1;
+	background-color: rgba(30,30,30,.9);
+	color: white;
+	padding: 20px;
+	border: 1px solid grey;
+	z-index: 5;
+	text-align: center;
+
+	.close {
+		height: 10px;
+		.closem {
+			right: 15px;
+			top: 10px;
+			font-family: 'Walter Turncoat';
+			position: absolute;
+			cursor: pointer;
+			color: white;
+			height: 100px;
+		}
+	}
+	.modalinformation {
+		padding: 20px;
+		text-align: center;
+		h2, p, .modallists{
+			text-align: center;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
