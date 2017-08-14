@@ -81,7 +81,7 @@ Station.create([
 {name: 'Nereid Av', borough: 0, neighborhood: 'Eastchester', train: [1, 4], accessible: false},
 {name: '233 St', borough: 0, neighborhood: 'Eastchester', train: [1, 4], accessible: true}, 
 {name: '225 St', borough: 0, neighborhood: 'Eastchester', train: [1, 4], accessible: false}, 
-{name: '219', borough: 0, neighborhood: 'Baychester', train: [1, 4], accessible: false},
+{name: '219 St', borough: 0, neighborhood: 'Baychester', train: [1, 4], accessible: false},
 {name: 'Gun Hill Rd', borough: 0, neighborhood: 'Allerton', train: [1, 4], accessible: false}, 
 {name: 'Burke Av', borough: 0, neighborhood: 'Allerton', train: [1, 4], accessible: false}, 
 {name: 'Allerton Av', borough: 0, neighborhood: 'Allerton', train: [1, 4], accessible: false}, 
@@ -487,4 +487,10 @@ Station.create([
 #S line, all shuttles, excludes stations shared with previous lines
 {name: 'Park Place', borough: 2, neighborhood: 'Crown Heights', train: [21], accessible: true},    
 {name: 'Botanic Garden', borough: 2, neighborhood: 'Prospect Park-Lefferts', train: [21], accessible: false},    
+])
 
+User.create([
+	{fname: 'Erin', lname: 'Young', email: 'erinkarlayoung@gmail.com', password: '12345678', admin: true}
+	{fname: 'John Q.', lname: 'Public', email: 'johnqpublic@me.com', password: 'password', admin: false}
+	{fname: 'Generic', lname: 'McGoogleReviewer', email: 'google@gmail.com', password: 'hackable', admin: false}
+	])
