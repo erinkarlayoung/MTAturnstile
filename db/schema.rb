@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20170808200358) do
 
   create_table "ratings", force: :cascade do |t|
     t.integer "station_id"
-    t.integer "used_id"
+    t.integer "user_id"
     t.boolean "sketchy"
     t.boolean "dirty"
     t.boolean "smelly"

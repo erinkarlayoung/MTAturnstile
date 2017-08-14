@@ -486,11 +486,38 @@ Station.create([
 {name: '8 Av', borough: 1, neighborhood: 'Greenwich Village', train: [22], accessible: false},    
 #S line, all shuttles, excludes stations shared with previous lines
 {name: 'Park Place', borough: 2, neighborhood: 'Crown Heights', train: [21], accessible: true},    
-{name: 'Botanic Garden', borough: 2, neighborhood: 'Prospect Park-Lefferts', train: [21], accessible: false},    
+{name: 'Botanic Garden', borough: 2, neighborhood: 'Prospect Park-Lefferts', train: [21], accessible: false}
 ])
 
 User.create([
-	{fname: 'Erin', lname: 'Young', email: 'erinkarlayoung@gmail.com', password: '12345678', admin: true}
-	{fname: 'John Q.', lname: 'Public', email: 'johnqpublic@me.com', password: 'password', admin: false}
-	{fname: 'Generic', lname: 'McGoogleReviewer', email: 'google@gmail.com', password: 'hackable', admin: false}
+	{fname: 'Erin', lname: 'Young', email: 'erinkarlayoung@gmail.com', password: '12345678', admin: true},
+	{fname: 'John Q.', lname: 'Public', email: 'johnqpublic@me.com', password: 'password', admin: false},
+	{fname: 'Generic', lname: 'McGoogleReviewer', email: 'google@gmail.com', password: 'hackable', admin: false},
+	{fname: 'Internet', lname: 'User', email: 'outofideas@imtired.com', password: 'sleepnowplease', admin: false}
 	])
+
+Rating.create([
+	{station: 221, user: 1, sketchy: false, dirty: true, smelly: true, schleppy: false, review: 'The station itself is not sketchy, but I sometimes have experience weirdness outside the station. Constantly smells like pee. Full of disgruntled riders for whom the C train is their only option.'},
+	{station: 62, user: 1, sketchy: false, dirty: false, smelly: false, schleppy: true, review: 'Clean and beautiful station but you can definitely have to walk forever underground if you use the wrong entrance.'},
+	{station: 184, user: 1, sketchy: true, dirty: false, smelly: false, schleppy: true, review: 'I made the mistake of going here to connect the L and C trains late one night/early one morning. Weird vibes for sure. Lots of people hanging around who did not seem to be waiting for a train. Witnessed multiple drug deals on the platform'},
+	{station: 257, user: 1, sketchy: false, dirty: false, smelly: true, schleppy: true, review: 'Huge. Be sure to enter at Barclays if you need a train on that end or else it is endless hallway upond endless hallway'},
+	{station: 320, user: 1, sketchy: true, dirty: true, smelly: true, schleppy: false, review: 'This place is positively post-apocalyptic. Broken tiles, puddles of filth, smells of pee and garbage. If they make another Mad Max where they ride the J train instead of those huge ass desert crawlers it should absolutely be filmed here'},
+	{station: 424, user: 1, sketchy: false, dirty: true, smelly: false, schleppy: false, review: 'The rat king lives here.'},
+	{station: 420, user: 1, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'The little girls who sell cookies in the station here are badass hustlers and we will all be working for them someday. The large men selling cocaine outside of this station are also badass hustlers and we will also be working for them if we are not already'},
+	{station: 239, user: 4, sketchy: false, dirty: false, smelly: false, schleppy: true, review: 'Ever wanted to ride miles and miles of escalators just for kicks? Didnt think so. The Lexington 53rd street station is so fucking far below ground that the MTA had to install giant escalators - each takes about 4 minutes to ride - to ferry passengers back and forth. Talk about a buzz kill.'},
+	{station: 8, user: 4, sketchy: true, dirty: true, smelly: true, schleppy: true, review: 'New Yorkers call this stop the Tunnel of Doom. To access the station, riders must trudge a quarter mile through a narrow concrete tunnel full of rats and garbage. Dark, dank, and incredibly creepy. Far and away the worst subway stop in the city.'},
+	{station: 320, user: 4, sketchy: true, dirty: true, smelly: true, schleppy: false, review: 'This place is a war-zone. The "Chambers" sign alone is enough to make an out-of-towner cringe with fear. Broken tiles are everywhere, the lighting reminds us of the batcave, and steroidal rats dont seem to be the least bit intimidated by their human counterparts.'},
+	{station: 5, user: 4, sketchy: true, dirty: true, smelly: false, schleppy: false, review: 'If you enjoy freezing your ass off while keeping your eyes pealed for muggers, the 215th station is the spot for you. Platforms are narrow and marked by graffiti, and when night rolls around things get real creepy, real fast.'},
+	{station: 423, user: 4, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'Getting to the L is a royal pain. From the F, which is where most people are coming from, you have to walk up 2 flights of stairs, down another, and through a dimly lit concrete hallway that is roughly a quarter mile in length'},
+	{station: 423, user: 4, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'Getting to the L is a royal pain. From the F, which is where most people are coming from, you have to walk up 2 flights of stairs, down another, and through a dimly lit concrete hallway that is roughly a quarter mile in length'},
+	{station: 320, user: 2, sketchy: true, dirty: true, smelly: true, schleppy: false, review: 'Looks horrible and smells just as bad. Who knows how many things have peed or died here.Avoid this station at all times and consider transferring to a 4, 5 or 6 to Brooklyn Bridge - City Hall. A lot safer and more welcoming.'},
+	{station: 320, user: 2, sketchy: true, dirty: true, smelly: true, schleppy: false, review: 'Looks horrible and smells just as bad. Who knows how many things have peed or died here. Avoid this station at all times and consider transferring to a 4, 5 or 6 to Brooklyn Bridge - City Hall. A lot safer and more welcoming.'},
+	{station: 25, user: 2, sketchy: false, dirty: false, smelly: false, schleppy: true, review: 'Unbelievable amount of people during rush hour.'},
+	{station: 345, user: 2, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'Clean and with an attendant on duty at all times. A set of stairs for each corner of the intersection makes getting to this station or from it to your destination extra convenient.'},
+	{station: 159, user: 2, sketchy: false, dirty: false, smelly: false, schleppy: true, review: 'Also known as Fisk Av. Local only train station with very frequent service (like any other 7 line station). Litter free, but could use a renovation (as of Aug. 2016).  No wheelchair accessibility.'},
+	{station: 43, user: 2, sketchy: true, dirty: true, smelly: false, schleppy: false, review: 'Shit hole. Below grade level station. Used to be part of a railroad. (5) train service is not good, especially on weekends. Exit at north end. Connection available to Bx28 and Bx38 bus routes. Not wheelchair accessible. Very small mezzanine. '},
+	{station: 166, user: 3, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'It smells like toilet cleaner. But it has cool art and is clean.'},
+	{station: 371, user: 3, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'Clean and working properly. 20 minute wait at night. 15 minute wait during the day.'},	
+	{station: 221, user: 3, sketchy: false, dirty: false, smelly: false, schleppy: false, review: 'Good service at all times, and pretty clean too. Transfer is available to the Franklin Ave. Shuttle via 2 passageways which connect to the C platforms at the Easternmost end.'}
+
+	])	
