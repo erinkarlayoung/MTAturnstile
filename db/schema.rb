@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170808200358) do
+ActiveRecord::Schema.define(version: 20170814194824) do
+
+  create_table "homes", force: :cascade do |t|
+    t.string "create"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ratings", force: :cascade do |t|
     t.integer "station_id"
