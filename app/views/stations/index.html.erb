@@ -22,9 +22,10 @@
         <td><%= station.neighborhood %></td>
         <td><%= station.train %></td>
         <td><%= station.accessible %></td>
+        <td><%= bar.rating_id %></td>
         <td><%= link_to 'Show', station %></td>
         <td><%= link_to 'Edit', edit_station_path(station) %></td>
-        <td><%= link_to 'Destroy', station, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
