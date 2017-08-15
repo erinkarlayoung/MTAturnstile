@@ -1,0 +1,3 @@
+class Borough < ApplicationRecord
+
+end
