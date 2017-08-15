@@ -1,13 +1,41 @@
+
 <div id="map_daddy" class="map">
 	<p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+  <div id="map">
 	<%= render 'home/map_image' %>
-
+  </div>
+</div>
+<!-- Creating OnclickEvents -->
 <% @station.each do |station| %>
-		<div id="<%= station.id %>" style="display:none" class="station_summary container">
+
+		<div id="box-<%= station.id %>" class="station_summary">
 			<h3><%= station.name %></h3>
-			<p><%= station.borough %></p>
-			<p><%= station.neighborhood %></p>
-			<p><%= station.train %></p>
+<!-- 			<h4><%= station.borough %></h4> -->
+			<h4><%= station.neighborhood %></h4>
+			<h4><%= station.train %></h4>
+			<br>
+			<h5>Crime ridden? Trash-filled? Stinky? A hell of a hike?</h5>
+			<br>
+			<h5>Sketchiness: <%= station.sketchiness %></h5>
+			<h5>Dirtiness: <%= station.dirtiness %></h5>
+			<h5>Smelliness: <%= station.smelliness %></h5>
+			<h5>Schleppiness: <%= station.schleppiness %></h5>
 		</div>
+<% end %>
+
+<!-- Onclick JS stuff -->
+<script>
+	<% @station.each do |station| %>
+		var element = document.querySelector("#station-<%= station.id %>");
+		if(element)
+		element.addEventListener('click', function(event) {
+			console.log(event);
+			document.querySelectorAll(".station_summary.active").forEach(function(station){
+				station.classList.remove("active");
+			});
+ 			document.querySelector("#box-<%= station.id %>").classList.add("active");
+		});
 	<% end %>
+// </script>
+<!--HELLOOOOO-->

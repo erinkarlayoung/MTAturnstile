@@ -9,11 +9,15 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
   <body>
+      <header>
+      <div id="logoheader">
+        <img src="/assets/TurnstileLogo.png">
+        <h3>Plan your trip with all things considered!</h3>
+      </div>
+    </header>
     <div class="container-fluid">
     <%= yield %>
     </div>
-
   </body>
 </html>
