@@ -1,1 +1,14 @@
-<h1>HELLO MOTHERFUCKERS!</h1>
+<div id="map_daddy" class="map">
+	<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+	<%# image_tag ( "WilliamsburgMap1.svg" )%>
+	<%= render 'home/map_image' %>
+
+<% @station.each do |station| %>
+		<div id="<%= bar.id %>" style="display:none" class="station_summary container">
+			<h3><%= station.name %></h3>
+			<p><%= station.borough %></p>
+			<p><%= station.neighborhood %></p>
+			<p><%= station.train %></p>
+		</div>
+	<% end %>
