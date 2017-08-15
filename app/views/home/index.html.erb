@@ -4,7 +4,7 @@
 	<%= render 'home/map_image' %>
 
 <% @station.each do |station| %>
-		<div id="<%= bar.id %>" style="display:none" class="station_summary container">
+		<div id="<%= station.id %>" style="display:none" class="station_summary container">
 			<h3><%= station.name %></h3>
 			<p><%= station.borough %></p>
 			<p><%= station.neighborhood %></p>
