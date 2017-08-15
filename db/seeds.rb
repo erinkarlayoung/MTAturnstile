@@ -5,37 +5,38 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Borough.create([ 	
-	{name: 'Bronx'}, 	
-	{name: 'Manhattan'}, 	
-	{name: 'Brooklyn'},
-	{name: 'Queens'}
-])  
+# Borough.create([ {name: "Bronx"}])
+Borough.create([
+	{name: "Bronx"},
+	{name: "Manhattan"},
+	{name: "Brooklyn"},
+	{name: "Queens"}
+	])
 
 Train.create([ 	
-	{name: 1},
-	{name: 2}, 	
-	{name: 3}, 	
-	{name: 4},
-	{name: 5}, 	
-	{name: 6}, 	
-	{name: 7}, 	
-	{name: A},
-	{name: C}, 	
-	{name: E}, 	
-	{name: B}, 	
-	{name: D}, 	
-	{name: F}, 	
-	{name: M}, 	
-	{name: J}, 	
-	{name: Z},
-	{name: N}, 	
-	{name: Q}, 	
-	{name: R}, 	
-	{name: W}, 	
-	{name: G},
-	{name: S},
-	{name: L}
+	{name: '1'},
+	{name: '2'}, 
+	{name: '3'}, 
+	{name: '4'},
+	{name: '5'}, 
+	{name: '6'}, 
+	{name: '7'}, 
+	{name: 'A'},
+	{name: 'C'}, 
+	{name: 'E'}, 
+	{name: 'B'}, 
+	{name: 'D'}, 
+	{name: 'F'}, 
+	{name: 'M'}, 
+	{name: 'J'}, 
+	{name: 'Z'},
+	{name: 'N'}, 
+	{name: 'Q'}, 
+	{name: 'R'}, 
+	{name: 'W'}, 
+	{name: 'G'},
+	{name: 'S'},
+	{name: 'L'}
 ])  
 
 Station.create([

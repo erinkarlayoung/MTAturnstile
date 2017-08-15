@@ -12,6 +12,12 @@
 
 ActiveRecord::Schema.define(version: 20170814194824) do
 
+  create_table "boroughs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "homes", force: :cascade do |t|
     t.string "create"
     t.datetime "created_at", null: false
