@@ -15,7 +15,7 @@ Borough.create([
 
 trains = %w(1 2 3 4 5 6 7 A C E B D F M J Z N Q R W G S L)
 trains.each do |train|
-	Train.create(name: train)
+    Train.create(name: train)
 end
 
 Station.create([
@@ -75,22 +75,22 @@ Station.create([
 {name: 'Intervale Av', borough: 0, neighborhood: 'Morrisania', train: [1, 4], accessible: false},
 {name: 'Prospect Av', borough: 0, neighborhood: 'Mott Haven', train: [1, 4], accessible: false},
 {name: 'Jackson Av', borough: 0, neighborhood: 'Mott Haven', train: [1, 4], accessible: false},
-{name: '3 Av-149 St', borough: 0, neighborhood: 'The Hub', train: [1, 4], accessible: true},
-{name: '149 St-Grand Concourse', borough: 0, neighborhood: 'The Hub', train: [1, 3, 4], accessible: false},
-{name: '135 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: true},
-{name: '125 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false},
-{name: '116 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false},
-{name: 'Central Park North-110 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false},
-{name: 'Fulton St', borough: 1, neighborhood: 'Financial District', train: [1, 2, 3, 4, 7, 8, 14, 165], accessible: true},
-{name: 'Wall St', borough: 1, neighborhood: 'Financial District', train: [1, 2], accessible: false},
-{name: 'Clark St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2], accessible: false},
-{name: 'Borough Hall', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2, 3, 4], accessible: true},
-{name: 'Hoyt St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2], accessible: false},
-{name: 'Nevins St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2, 3, 4], accessible: false},
-{name: 'Bergen St', borough: 2, neighborhood: 'Park Slope', train: [1, 2], accessible: false},
-{name: 'Grand Army Plaza', borough: 2, neighborhood: 'Prospect Heights', train: [1, 2], accessible: false},
-{name: 'Eastern Pkwy-Brooklyn Museum', borough: 2, neighborhood: 'Crown Heights', train: [1, 2], accessible: false},
-{name: 'Franklin Av', borough: 2, neighborhood: 'Crown Heights', train: [1, 2, 3, 4], accessible: false},
+{name: '3 Av-149 St', borough: 0, neighborhood: 'The Hub', train: [1, 4], accessible: true}, 
+{name: '149 St-Grand Concourse', borough: 0, neighborhood: 'The Hub', train: [1, 3, 4], accessible: false}, 
+{name: '135 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: true}, 
+{name: '125 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false}, 
+{name: '116 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false}, 
+{name: 'Central Park North-110 St', borough: 1, neighborhood: 'Harlem', train: [1, 2], accessible: false}, 
+{name: 'Fulton St', borough: 1, neighborhood: 'Financial District', train: [1, 2, 3, 4, 7, 8, 14, 165, accessible: true},
+	{name: 'Wall St', borough: 1, neighborhood: 'Financial District', train: [1, 2], accessible: false}, 
+{name: 'Clark St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2], accessible: false}, 
+{name: 'Borough Hall', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2, 3, 4], accessible: true}, 
+{name: 'Hoyt St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2], accessible: false}, 
+{name: 'Nevins St', borough: 2, neighborhood: 'Brooklyn Heights', train: [1, 2, 3, 4], accessible: false}, 
+{name: 'Bergen St', borough: 2, neighborhood: 'Park Slope', train: [1, 2], accessible: false}, 
+{name: 'Grand Army Plaza', borough: 2, neighborhood: 'Prospect Heights', train: [1, 2], accessible: false}, 
+{name: 'Eastern Pkwy-Brooklyn Museum', borough: 2, neighborhood: 'Crown Heights', train: [1, 2], accessible: false}, 
+{name: 'Franklin Av', borough: 2, neighborhood: 'Crown Heights', train: [1, 2, 3, 4], accessible: false}, 
 {name: 'President St', borough: 2, neighborhood: 'Prospect Lefferts Gardens', train: [1, 4], accessible: false},
 {name: 'Sterling', borough: 2, neighborhood: 'Prospect Lefferts Gardens', train: [1, 4], accessible: false},
 {name: 'Winthrop St', borough: 2, neighborhood: 'Prospect Lefferts Gardens', train: [1, 4], accessible: false},
